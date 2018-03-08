@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"宋体","微软雅黑",Arail,Tabhoma; font-size: 12px; text-align: left;}
+
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+.Marr10{margin-right: 5px!important;}
+.MainColor{margin-bottom: 10px;}
+.Single{float: left;width: 100%;box-sizing: border-box;}
+.fl{float: left!important;}
+.fr{float: right!important;}
+.H30{height: 30px!important;line-height: 28px!important;}
+.Icon{ font-size: 13px!important;line-height: 30px!important;color:white;}
+/*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
+/*==========================Reset_End===========================*/
+.Content{width: 770px;margin: 40px auto; padding-bottom: 15px; ;border-radius: 10px;}
+.Title{font-family: '黑体';  border-radius: 10px 10px 0 0; float: left;width: 100%;background: #323333;border-bottom: 3px solid white; height: 50px;line-height: 50px;text-align: center;color: white;font-size: 18px;}
+.Menu{float: left;margin-bottom: 3px; width: 100%;background:#B5B6B6;font-family: 微软雅黑;}
+.Menu>li{position: relative; list-style: none; float: left;height: 100%;padding-left: 10px;text-align: center;color: white;}
+.SelectBox{position: relative; background: #4421A3 ; padding:0 10px; float: left;height: 30px;;border-radius: 5px;margin: 5px 0;;cursor: pointer; }
+.SelectBox:hover{background: #5C2AE2;}
+.FadeOut{position: absolute;width: 100%;height: 100%;top: 0;left: 0;display: none;}
+.SelectValue{float: left;margin-right:10px;font-size: 14px;color: white;;height: 30px;line-height: 30px;}
+.SingleValue{float: left;text-align: center; font-size: 14px;color: white;;height: 30px;line-height: 30px;}
+.Select{z-index: 9; border: 1px solid #ccc;box-sizing: border-box;border-radius: 5px;overflow: hidden;display: none; position: absolute;left: 0;top: 30px; float: left;width: 100%;overflow: hidden;}
+.Select>li{list-style: none; background: #3C3C3C;border-bottom: 1px solid white; float: left;width: 100%;height: 30px;line-height: 30px;font-size: 13px;}
+.Select>li:hover{background: #161616}
+.Select>li:last-child{border-bottom: 0; }
+.ColorBox{cursor: default; box-sizing: border-box;padding: 15px; width: 223px;border-radius: 5px; background: #3C3C3C;position: absolute;top: 30px;left: 0;}
+.ColorTit{border-bottom: 1px solid white; font-size: 14px;color: white;text-align: left;line-height: 30px;float: left;width: 100%;}
+.ExamColor{border: 1px solid white;background: white;cursor: not-allowed; border-radius: 5px; width: 100px;height: 25px;float: left;}
+.ClearColor{float: right;font-size: 12px;border: 1px solid white; background:#4421A3;border-radius: 5px;text-align: center;width: 60px;height: 25px;line-height: 23px;cursor: pointer; }
+.ClearColor:hover{background: #5C2AE2;}
+.MainTextIn{ border: 2px solid #696E6E;border-bottom: 0; outline: none;padding: 10px;box-sizing: border-box; height: 300px;position: relative; font-family: 微软雅黑; float: left;width: 100%;box-sizing: border-box;font-size: 12px; overflow-y: auto;overflow-x: hidden; background: white;}
+.CodeNum{border-radius: 0 0 10px 10px;background:#323333;  ;border-top: 0;float:left;width: 100%;height: 35px;text-align: right;box-sizing: border-box;padding: 0 20px;font-size: 12px;color: white;line-height: 35px;}
+.MainTextIn div{display: inline;}
+.MainTextIn a{cursor: pointer;}
+.MainTextIn ul li{list-style: none;}
+.MainTextIn ol li{list-style: inside;list-style-type: decimal}
+.ColorList{float: left;width: 100%;box-sizing: border-box;}
+.ColorList>li{list-style: none; cursor: pointer; width: 15px;height: 15px;border-radius: 2px;margin: 2px; float: left;}
+.ExHtmlColor{background: white;margin-right: 10px; height: 30px;float: left;width: 30px;border-radius: 3px; box-sizing: border-box;}
+.HtmlColorInput{color: #333; float: left;width: 80px;height: 30px;border-radius: 3px;border: 1px solid #ccc;outline: none;padding-left: 10px;}
+.ColorIcon{float: left;font-size: 13px;margin-top: 5px; ;width: 18px;text-align:center;  color: white;font-weight: bold;border-bottom: 3px solid #000;}
+.Choice {background: #0B3CA7;color: white;}
+.FooterList{float: left;width: 100%;box-sizing: border-box;}
+.FooterList li{float: left; list-style: none; background: #4421A3 ; padding:0 10px; float: left;height: 30px;;border-radius: 5px;margin: 5px ;text-align: center;cursor: pointer; color: white;line-height: 30px;}
+.FooterList li:hover{background: #5C2AE2;}
+.FadeMsg{display: none; position: fixed;width: 200px;height: 50px;border-radius: 10px;color: white;font-size: 16px;text-align: center;line-height: 50px; top: 0;left: 0;right: 0;bottom: 0;margin: auto;background: rgba(0,0,0,0.7);z-index: 9999999}
+.HtmlIco{font-size: 14px;color: white;line-height: 30px;float: left;width: 100%;text-align: center;}
+@media print {
+    .Title,
+    .CodeNum,
+    .Menu{display: none;}
+    .MainTextIn{border: 0}
+}

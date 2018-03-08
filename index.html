@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echonessy</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+
+<div class="Content">
+    <div class="Title">Echonessy富文本编辑器</div>
+    <ul class="Menu">
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox SelectList" style="width: 100px;" title="字体">
+                <p id="FontFaValue" class="SelectValue" data-value="FontW">微软雅黑</p>
+                <span class=" glyphicon glyphicon-triangle-bottom Icon fr"></span>
+                <ul class="Select">
+                    <li type="0" data-value="微软雅黑" title="微软雅黑">微软雅黑</li>
+                    <li type="0" data-value="宋体" title="宋体">宋体</li>
+                    <li type="0" data-value="楷体" title="楷体">楷体</li>
+                    <li type="0" data-value="黑体" title="黑体">黑体</li>
+                    <li type="0" data-value="幼圆" title="幼圆">幼圆</li>
+                    <li type="0" data-value="楷体" title="楷体">楷体</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox SelectList" title="字号">
+                <p id="FontValue" class="SelectValue" data-value="12">12</p>
+                <span class="glyphicon glyphicon-triangle-bottom Icon fr"></span>
+                <ul class="Select">
+                    <li type="1" data-value="12" title="12">12</li>
+                    <li type="1" data-value="14" title="14">14</li>
+                    <li type="1" data-value="16" title="16">16</li>
+                    <li type="1" data-value="18" title="18">18</li>
+                    <li type="1" data-value="20" title="20">20</li>
+                    <li type="1" data-value="22" title="22">22</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox SelectColor" id="ColorBtn" title="字体颜色">
+                <span class=" ColorIcon Marr10" id="CoIco">A</span>
+                <span class="glyphicon glyphicon-triangle-bottom Icon fr"></span>
+                <div class="Select ColorBox">
+                    <p class="ColorTit">示例</p>
+                    <p class="ExamColor" id="ExamColor" title="#000000"></p>
+                    <p class="ClearColor" id="ClearColor">清空颜色</p>
+                    <p class="ColorTit">主题颜色</p>
+                    <div class="Single" id="ColorMain"></div>
+                    <p class="ColorTit">Html颜色</p>
+                    <div class="Single">
+                        <div class="ExamColor ExHtmlColor" id="ExHtmlColor" title="#000000"></div>
+                        <input type="text" class="HtmlColorInput">
+                        <p class="ClearColor H30" id="ChangeColor">确定</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontBold" title="加粗">
+                <span class="glyphicon glyphicon-bold Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontItalic" title="斜体">
+                <span class="glyphicon glyphicon-italic Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontUnderline" title="下划线">
+                <span class="glyphicon glyphicon-text-width Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontUrl" title="超链接">
+                <span class="glyphicon glyphicon-link Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontUnUrl" title="取消超链接">
+                <span class="glyphicon glyphicon-link Icon" style="color:#B9BBBB "></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontList" title="有序列表">
+                <span class="glyphicon glyphicon-list Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontUnList" title="无序列表">
+                <span class="glyphicon glyphicon-th-list Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontLeft" title="左对齐">
+                <span class="glyphicon glyphicon-align-left Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontCenter" title="中心对齐">
+                <span class="glyphicon glyphicon-align-center Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontRight" title="右对齐">
+                <span class="glyphicon glyphicon-align-right Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="FontAll" title="全选">
+                <span class="glyphicon glyphicon-text-background Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="CopyBtn" title="复制">
+                <span class="glyphicon glyphicon-duplicate Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="CutBtn" title="剪切">
+                <span class="glyphicon glyphicon-scissors Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="ClearBtn" title="清除格式">
+                <span class="glyphicon glyphicon-erase Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="FadeOut"></div>
+            <div class="SelectBox" id="PrintBtn" title="打印">
+                <span class="glyphicon glyphicon-print Icon"></span>
+            </div>
+        </li>
+        <li>
+            <div class="SelectBox" id="FontCode" title="源代码">
+                <span class="HtmlIco">Html</span>
+            </div>
+        </li>
+    </ul>
+    <div class="Single">
+        <div class="MainTextIn" id="MainTextIn" contenteditable="true"></div>
+        <div class="CodeNum" id="CodeNum">当前字数:0</div>
+    </div>
+</div>
+<p id="FadeMsg" class="FadeMsg"></p>
+<script src="js/EchoEdit.js"></script>
+<script>
+    var Demo = new EchoEdit();
+    Demo.Init()
+</script>
+</body>
+</html>
