@@ -16,3 +16,6 @@ Js:
 </script>
 ```
 
+## 效果图
+
+![image](https://github.com/Echonessy/EchoEdit/blob/master/read/1.png)
