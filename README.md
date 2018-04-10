@@ -15,6 +15,7 @@ Js:
     Demo.Init()
 </script>
 ```
+[Demo演示地址]( https://echonessy.github.io/EchoEdit/)
 
 ## 效果图
 
